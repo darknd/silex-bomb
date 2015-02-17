@@ -7,4 +7,4 @@ use Symfony\Component\Console\Application;
 
 $app = new Silex\Application();
 $new = new helloWorld($app);
-$new->helloThere();
+echo $new->helloThere();

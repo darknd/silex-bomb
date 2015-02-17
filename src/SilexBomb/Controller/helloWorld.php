@@ -14,7 +14,6 @@ class helloWorld extends Controller{
         $name = $getName->whoIam();
         $name .= self::test();
         $result = $output->showName($name);
-        echo self::test();
-        echo $result;
+        return $result;
     }
 }
