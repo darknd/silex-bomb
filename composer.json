@@ -1,0 +1,10 @@
+{
+    "require": {
+        "silex/silex": "*",
+        "lichtner/fluentpdo": "dev-master",
+        "twig/twig": "*"
+    },
+    "autoload": {
+        "psr-4": {"Darknd\\": "src/"}
+    }
+}
