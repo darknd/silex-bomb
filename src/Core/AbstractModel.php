@@ -6,8 +6,6 @@ require_once __DIR__.'/../../vendor/autoload.php';
 
 abstract class AbstractModel
 {
-
-
     protected $_app;
 
     public function __construct($app)

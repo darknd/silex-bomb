@@ -2,13 +2,15 @@
 
 namespace Darknd\SilexBomb\View;
 
-use Darknd\Core\Views;
+use Darknd\Core\View;
 
-class Output extends Views{
+class Output extends View{
 
     public function showName($string){
         $string .= self::test();
-        return $this->_app['twig']->render('test.twig',array('name' => $string ));
+        $route = explode("\\", get_class());
+        $data = ['name' => $string];
+        return self::render($route,$data);
     }
 
 }

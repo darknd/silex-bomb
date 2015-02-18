@@ -9,7 +9,6 @@ abstract class Controller
     public function __construct($app)
     {
         $this->_app = $app;
-        
     }
 
     public function test(){
