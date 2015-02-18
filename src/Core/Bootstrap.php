@@ -7,7 +7,6 @@ use Silex\Application;
 abstract class Bootstrap
 {
     protected $_app = null;
-    protected $_filename = __FILE__;
 
     abstract public function getConfig();
 

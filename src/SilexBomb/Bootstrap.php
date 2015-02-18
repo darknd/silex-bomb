@@ -7,8 +7,6 @@ use PDO;
 
 class Bootstrap extends \Darknd\Core\Bootstrap{
 
-    protected $_filename = __FILE__;
-
     public function setRoutes(){
 
     }

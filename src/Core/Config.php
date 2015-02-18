@@ -8,7 +8,7 @@ class Config
 {
     protected $_app;
     protected $_config = [];
-    protected $_configFile = null;
+    protected $_configFile;
 
     public function __construct($app, $configFile)
     {
