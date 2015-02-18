@@ -11,18 +11,17 @@ abstract class AbstractModel
     public function __construct($app)
     {
         $this->_app = $app;
-        $this->_app->register(new FpdoServiceProvider($this->_app));
     }
 
     public function insert($data)
     {
-        $query = $this->_app['fpdo']->insertInto('user', $data);
+        $query = $this->_app['db']->insertInto('user', $data);
         return $query->execute();
     }
 
     public function listData()
     {
-        $query = $this->_app['fpdo']->from('user');
+        $query = $this->_app['db']->from('user');
         return $query->fetchAll();
     }
 
